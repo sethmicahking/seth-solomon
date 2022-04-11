@@ -9,18 +9,7 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
+  
     <script  src="js/index.js"></script>
 
 
@@ -33,11 +22,47 @@
   </p>
 
   <form id="survey-form">
+    <br>
+    <label id="name-label" for="">please enter your full name</label>
     <input type="text" id="name" name="name" placeholder="Your Name" required>
     <br>
+    <br>
+    <label id="location"for="">where are you from</label>
+    <select name="" id="dropdown">
+      <option id="geoposition" value="America"></option>
+      <label for="geoposition">America</label>
+      <option id="geoposition" value="Africa"></option>
+      <label for="geoposition">Africa</label>
+    
+    
+      
+    </select>
+    <div  id="group1question">
+    <label id="email-label" for="">this email is required in case we need to contact you</label>
     <input type="email" id="email" name="email" placeholder="Your Email" required>
     <br>
-    <input type="number" id="number" name="number" placeholder="Some Number" required>
+    <br>
+    <label id="number-label" for="">this number is required in case we need to contact you</label>
+    <input type="number" id="number" name="number" min="1" max="5" placeholder="Some Number" required>
+    <br>
+    <label for="">please select from the options below</label>
+    <input alt="name" type="radio" name="radio" form="">
+    <label for="radio">male</label><br>
+    <input  type="radio" name="radio" form="">
+    <label for="radio">female</label><br>
+    <input type="radio" name="radio1" form="">
+    <label for="radio1">rather not say</label>
+    </div>
+  <div id="groupcheckbox">
+    <input alt="value" type="checkbox"name="value" form="">
+    <input alt="value" type="checkbox"name="value" form="">
+    <input alt="value" type="checkbox"name="value" form="">
+  </div>
+
+    <label for="">please review our survey</label>
+    <textarea name="textarea" id="text area" cols="30" rows="8"></textarea>
+    <button id="submit" formaction="/www.submitedto.sol_seth.com" > submit </button>
+
   </form>
 
 </div>
